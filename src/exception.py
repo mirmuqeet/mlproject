@@ -1,5 +1,6 @@
 import sys
-import logging 
+import logging
+from src.logger import logging
 
 def error_message_detail(error, error_message_detail: sys):
     _, _, exc_tb = error_message_detail.exc_info()
@@ -15,5 +16,3 @@ class CustomException(Exception):
 
     def __str__(self):
         return self.error_message
-
-
