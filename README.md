@@ -5,9 +5,11 @@ This project predicts the math scores of students based on various features. It'
 **Files and Directories**
 
 **.ebextensions/**
+
 Contains configuration files for deployment on AWS Elastic Beanstalk.
 
 **artifacts/**
+
 data.csv: The original dataset.
 
 model.pkl: The trained model.
@@ -25,20 +27,29 @@ test.csv: Testing data split.
 
 **src/**
 components/: Contains the various components of the pipeline such as data ingestion, data transformation, and model training.
+
 pipeline/: Manages the end-to-end pipeline.
+
 init.py: Initializes the src module.
+
 exception.py: Custom exception handling.
+
 logger.py: Logging functionality.
+
 utils.py: Utility functions.
 
 **templates/**
+
 Contains HTML templates for the web application.
 
 **application.py**
+
 The main Flask application that runs the prediction model on a local server.
 
 **requirements.txt**
+
 Lists all the dependencies required to run the project.
 
 **setup.py**
+
 Script for setting up the project environment
